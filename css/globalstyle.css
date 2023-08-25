@@ -1,6 +1,45 @@
-:root {
-    --color-primary: #323232
-}
-body {
-    background-color: var(--color-primary);
-}
+    /* Reset Css*/
+    * {
+        margin: 0;
+        padding: 0;
+     }
+    :root {
+    
+        /* Variables Global*/
+        --color-primary: #39FF14;
+        --color-secondary:  #009E74;
+        --color-black: #000;
+        --color-white: #fff;
+        --font-size-h1: 1.5rem; /*24px*/
+        --font-size-h2: 1.125rem; /*18px*/
+        --font-size-descriptions: 1rem; /*16px*/
+        --font-family: sans-serif;
+    
+    }
+    body {
+        background-color: var(--color-primary);
+        font-family: var(--font-family);
+        line-height: 1.6;
+    
+    }
+    a {
+        text-decoration: none;
+    }
+    
+    button {
+        border: none;
+        cursor: pointer;
+    }
+    input {
+        border: none;
+    }
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
