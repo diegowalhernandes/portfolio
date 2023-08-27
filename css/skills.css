@@ -3,20 +3,11 @@
   padding: 0px;
 }
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #111;
+    font-family: var(--font-family);
+    background-color: var(--color-black);
+    line-height: 1.6;
   }
   
-  header {
-    background-color: #111;
-    color: #111;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  }
 
   .container-wrapper {
     display: flex;
@@ -46,3 +37,19 @@ body {
     color: #ddd;
     line-height: 1.6;
   }
+
+  /* Media query para dispositivos com largura de tela até 768px */
+@media (max-width: 768px) {
+    header {
+      font-size: 1.2rem;
+    }
+
+    .container-wrapper{
+      display: flex;
+      flex-direction: column;
+
+    h1 {
+      font-size: 1rem;
+    }
+  }
+}

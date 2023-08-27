@@ -1,15 +1,30 @@
-var tipe = "https://cdn.jsdelivr.net/npm/typed.js@2.0.12"
-let typed = new Typed('.animate', {
-    strings: [
-        "SOFTWARE ENGINEER, FRONT END.",
-    ],
-    typeSpeed: 100,
-    backSpeed: 80,
-    loop: true
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mouse Trail Effect</title>
+<style>
+  body {
+    margin: 0;
+    overflow: hidden;
+  }
 
-// Efeito mouse 
-const numTrails = 20; // Número de elementos de rastro
+  .trail {
+    width: 10px;
+    height: 10px;
+    background-color: #00ff00;
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    transform-origin: center;
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+<script>
+  const numTrails = 20; // Número de elementos de rastro
   const trails = [];
 
   for (let i = 0; i < numTrails; i++) {
@@ -34,3 +49,6 @@ const numTrails = 20; // Número de elementos de rastro
       }, delay);
     });
   });
+</script>
+</body>
+</html>
