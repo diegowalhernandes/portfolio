@@ -7,7 +7,7 @@
     
         /* Variables Global*/
         --color-primary: #39FF14;
-        --color-secondary:  #009E74;
+        --color-secondary:  #00ff00;
         --color-black: #000;
         --color-white: #fff;
         --font-size-h1: 1.5rem; /*24px*/
@@ -42,5 +42,4 @@
         list-style: none;
         margin: 0;
         padding: 0;
-    }
-    
+    } 
